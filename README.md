@@ -9,4 +9,5 @@ Research project for Independent Study at Vanderbilt University
 4 . Install Expo
 `npm install -g expo`
 
-## 
+## Running
+yarn start
