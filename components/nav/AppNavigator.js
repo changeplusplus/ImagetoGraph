@@ -1,9 +1,9 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import Home from '../ui/Home';
-import Inputs from '../ui/Inputs';
-import TakePhoto from '../ui/TakePhoto'
-import Whiteboard from '../ui/Whiteboard';
-import InputText from '../ui/InputText';
+import Home from '../screens/Home';
+import Inputs from '../screens/Inputs';
+import TakePhoto from '../screens/TakePhoto'
+import Whiteboard from '../screens/Whiteboard';
+import InputText from '../screens/InputText';
 
 
 const AppNavigator = createStackNavigator({
