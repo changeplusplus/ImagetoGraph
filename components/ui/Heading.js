@@ -4,10 +4,24 @@ import Subheading from './Subheading'
 
 export default class Heading extends Component {
     render() { return (
-            < View style = {{flex: 1, justifyContent: "center", alignItems: "center"}}>
-    <Text style={{fontSize: 40}}> {this.props.text} < /Text>
-        < Text > {this.props.subtext} < /Text>
-        < /View>
+        < View style = {styles.container}>
+            <Text style={styles.heading}> {this.props.text} </Text>
+            <Text> {this.props.subtext}  </Text>
+        </View>
     );
-    }
-}
+    };
+};
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    heading: {
+        fontSize: 25,
+        fontWeight: "bold",
+    },
+});
