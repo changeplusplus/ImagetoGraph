@@ -1,11 +1,24 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
 
+import
 export default class AddData extends Component {
+
+    handleFiles = files => {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            // Use reader.result
+            alert(reader.result)
+        }
+        reader.readAsText(files[0]);
+    }
+
     render() {
         return (
             < View style = {styles.container}>
-                <Button title={this.props.buttonName} onCLick={this.props.buttonFunction}/>
+                <ReactFileReader handleFiles={this.handleFiles} fileTypes={'.csv'}>
+                    <Button title={this.props.buttonName}/>
+                </ReactFileReader>
             </View>
         );
     }
